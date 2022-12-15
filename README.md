@@ -12,40 +12,70 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
+
+![preview](assets/preview.webp)
+
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+
+![latte](assets/latte.webp)
+
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+
+![frappé](assets/frappe.webp)
+
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+
+![macchiato](assets/macchiato.webp)
+
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+
+![mocha](assets/mocha.webp)
+
 </details>
 
 ## Usage
 
-1. Download the file with your desired flavour e.g. `catppuccin-mocha` (to be found in the release or after cloning the repository in themes/)
-2. Copy it into your sway/i3 config directory e.g. `~/.config/sway`/`~/.config/i3`
-3. Include the file at the top of your `config`
-   - `include catppuccin-mocha` 
-4. When using the colors, use `$COLOR` e.g. `$base`
+1. Download the file with your desired flavour e.g. `catppuccin-mocha` (to be
+   found in the release or after cloning the repository in themes/)
+2. Copy it into your i3 or sway config directory (usually `~/.config/i3/` or
+   `~/.config/sway/`)
+3. Include the file at the top of your `config`:
+
+```i3config
+include catppuccin-mocha
+```
+
+4. When editing the config, use the
+   [name of the colour](https://github.com/catppuccin/catppuccin#-palettes) such
+   as `$base`.
+
+```i3config
+# target                 title     bg    text   indicator  border
+client.focused           $pink     $base $text  $rosewater $pink
+client.focused_inactive  $mauve    $base $text  $rosewater $mauve
+client.unfocused         $mauve    $base $text  $rosewater $mauve
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
+```
 
 ## 🙋 FAQ (optional)
 
--	Q: **_"Sway/i3 doesn't work with the colors"_**\
-	A: Make sure you included the file in the right place and you are using `$COLOR`
+- Q: **_"Sway/i3 doesn't work with the colors"_**
+  \
+  A: Make sure you included the file in the right place and you are using
+  `$color`
 
 ## 💝 Thanks to
 
