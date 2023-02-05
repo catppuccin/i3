@@ -50,12 +50,7 @@
    found in the release or after cloning the repository in themes/)
 2. Copy it into your i3 or sway config directory (usually `~/.config/i3/` or
    `~/.config/sway/`)
-3. Include the file at the top of your `config`:
-
-```i3config
-include catppuccin-mocha
-```
-
+3. Follow the instructions for your WM
 4. When editing the config, use the
    [name of the colour](https://github.com/catppuccin/catppuccin#-palettes) such
    as `$base`.
@@ -69,6 +64,16 @@ client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 ```
+
+## Sway
+- Include the file at the top of your `config`:
+```i3config
+include catppuccin-mocha
+```
+
+## i3
+- Due to a limitation in i3, you cannot use variables from imported files in the top-level config.
+- As a workaround, you may create another file to set the colors by importing them, and import in `config`.
 
 ## 🙋 FAQ (optional)
 
