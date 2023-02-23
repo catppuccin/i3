@@ -75,7 +75,7 @@ include catppuccin-mocha
 - Due to a limitation in i3, you cannot use variables from imported files in the top-level config.
 - As a workaround, you may create another file to set the colors by importing them, and import in `config`.
 
-## 🙋 FAQ (optional)
+## 🙋 FAQ
 
 - Q: **_"Sway/i3 doesn't work with the colors"_**
   \
