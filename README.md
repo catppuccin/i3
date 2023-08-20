@@ -57,9 +57,9 @@
 
 ```i3config
 # target                 title     bg    text   indicator  border
-client.focused           $pink     $base $text  $rosewater $pink
-client.focused_inactive  $mauve    $base $text  $rosewater $mauve
-client.unfocused         $mauve    $base $text  $rosewater $mauve
+client.focused           $lavender $base $text  $rosewater $lavender
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
