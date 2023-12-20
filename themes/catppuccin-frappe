@@ -5,6 +5,7 @@ set $mauve     #ca9ee6
 set $red       #e78284
 set $maroon    #ea999c
 set $peach     #ef9f76
+set $yellow    #e5c890
 set $green     #a6d189
 set $teal      #81c8be
 set $sky       #99d1db
