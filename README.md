@@ -70,7 +70,6 @@ bar {
     background         $base
     statusline         $text
     focused_statusline $text
-    active_workspace   $base $text $blue
     focused_separator  $base
     focused_workspace  $base $base $green
     active_workspace   $base $base $blue
