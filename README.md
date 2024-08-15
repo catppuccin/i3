@@ -71,22 +71,26 @@ bar {
     statusline         $text
     focused_statusline $text
     focused_separator  $base
-    focused_workspace  $base $base $green
-    active_workspace   $base $base $blue
-    inactive_workspace $base $base $surface1
-    urgent_workspace   $base $base $surface1
-    binding_mode       $base $base $surface1
+
+    # target           border bg        text
+    focused_workspace  $base  $mauve    $crust
+    active_workspace   $base  $surface2 $text
+    inactive_workspace $base  $base     $text
+    urgent_workspace   $base  $red      $crust
   }
 }
 ```
 
 ## Sway
+
 - Include the file at the top of your `config`:
+
 ```i3config
 include catppuccin-mocha
 ```
 
 ## i3
+
 - Due to a limitation in i3, you cannot use variables from imported files in the top-level config.
 - As a workaround, you may create another file to set the colors by importing them, and import in `config`.
 
