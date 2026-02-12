@@ -93,6 +93,8 @@ include catppuccin-mocha
 
 - Due to a limitation in i3, you cannot use variables from imported files in the top-level config.
 - As a workaround, you may create another file to set the colors by importing them, and import in `config`.
+- When using i3lock you can setup the background color (unfortunately not the other colors) with `exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork -c '$base'` and `bindsym $mod+l exec i3lock -c '$base'`
+- When using dmenu (dmenu > 5.4 if you want the -ob and -of flags added [recently](https://git.suckless.org/dmenu/commit/7175c4880bac3d2a2d4a6262b59193f0a38e2fdb.html)) you can use `bindsym $mod+d exec dmenu_run -nf '$text' -nb '$base' -sf '$base' -sb '$mauve' -of '$text' -ob '$mauve' -i` or recompile with the right [theme](https://github.com/catppuccin/dmenu)
 
 ## 🙋 FAQ
 
